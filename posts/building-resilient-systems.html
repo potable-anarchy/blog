@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Building Resilient Systems: A Decade of SRE Lessons - Brad's Blog</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Brad</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../index.html#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="../index.html#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="../index.html#blog" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="mailto:thisbrad@icloud.com" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <article class="post-single">
+        <div class="container">
+            <header class="post-header">
+                <div class="post-meta">
+                    <span class="post-date">July 3, 2025</span>
+                    <span class="post-category">SRE</span>
+                </div>
+                <h1 class="post-title">Building Resilient Systems: A Decade of SRE Lessons</h1>
+            </header>
+
+            <div class="post-content">
+                <p>Ten years ago, I thought resilience meant building systems that never failed. Today, I know it means building systems that fail gracefully and recover quickly. This shift in thinking has defined my journey as a Site Reliability Engineer.</p>
+
+                <h2>The First Hard Lesson</h2>
+                <p>My first major incident was a database cascade failure that took down our entire platform for six hours. I spent those six hours frantically trying to "fix" everything, when the real solution was to accept the failure and activate our recovery procedures. That incident taught me that resilience isn't about prevention—it's about preparation.</p>
+
+                <h2>The Art of Minimal Viable Solutions</h2>
+                <p>In high-pressure situations, the urge to over-engineer solutions is strong. But I've learned that the most resilient systems are often the simplest ones. A quick circuit breaker beats a complex retry mechanism. A simple health check beats an elaborate monitoring dashboard. The key is knowing when "good enough" is actually perfect.</p>
+
+                <h2>Building High-Performing Teams</h2>
+                <p>Systems are only as resilient as the teams that maintain them. The best SRE teams I've worked with share three characteristics:</p>
+                <ul>
+                    <li><strong>Psychological safety</strong> - Team members feel safe to report issues and mistakes</li>
+                    <li><strong>Shared ownership</strong> - Everyone takes responsibility for system health</li>
+                    <li><strong>Continuous learning</strong> - Post-mortems focus on improvement, not blame</li>
+                </ul>
+
+                <h2>The Human Element</h2>
+                <p>After a decade in SRE, I've realized that the most critical component of any system is the human element. We can automate deployments, scale infrastructure, and monitor everything—but at the end of the day, it's people who make the decisions that keep systems running.</p>
+
+                <p>The best engineers I know aren't the ones who write the most complex code. They're the ones who can stay calm under pressure, communicate clearly during incidents, and learn from every failure. They understand that resilience is as much about mindset as it is about technology.</p>
+
+                <h2>Looking Forward</h2>
+                <p>As we move into an era of increasingly complex distributed systems, the principles of resilience remain constant: prepare for failure, keep things simple, invest in your team, and never stop learning. The tools may change, but the fundamental challenges of building reliable systems at scale remain the same.</p>
+
+                <p>The next decade will bring new challenges—serverless architectures, edge computing, AI-driven operations. But I'm confident that the lessons learned from ten years of SRE will continue to guide us toward more resilient, more reliable systems.</p>
+            </div>
+
+            <footer class="post-footer">
+                <a href="../index.html" class="back-to-blog">← Back to Blog</a>
+            </footer>
+        </div>
+    </article>
+
+    <script src="../script.js"></script>
+</body>
+</html>

@@ -511,3 +511,89 @@ body {
         padding: 0.5rem 1rem;
     }
 }
+
+/* Blog post single page styles */
+.post-single {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: var(--surface);
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px var(--shadow);
+}
+
+.post-header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.post-header .post-meta {
+    margin-bottom: 1rem;
+}
+
+.post-header .post-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+    line-height: 1.2;
+}
+
+.post-content {
+    line-height: 1.8;
+    color: var(--text-secondary);
+}
+
+.post-content h2 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 2rem 0 1rem 0;
+}
+
+.post-content p {
+    margin-bottom: 1.5rem;
+}
+
+.post-content ul, .post-content ol {
+    margin-bottom: 1.5rem;
+    padding-left: 2rem;
+}
+
+.post-content li {
+    margin-bottom: 0.5rem;
+}
+
+.post-footer {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+}
+
+.back-to-blog {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition);
+}
+
+.back-to-blog:hover {
+    color: var(--primary-hover);
+}
+
+@media (max-width: 768px) {
+    .post-single {
+        margin: 1rem;
+        padding: 1rem;
+    }
+    
+    .post-header .post-title {
+        font-size: 2rem;
+    }
+    
+    .post-content h2 {
+        font-size: 1.5rem;
+    }
+}

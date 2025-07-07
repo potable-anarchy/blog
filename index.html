@@ -1,105 +1,156 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Blog</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <nav class="navbar">
-        <div class="nav-container">
-            <a href="#" class="nav-logo">YourName</a>
-            <ul class="nav-menu">
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">About</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">Contact</a>
-                </li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Brad's Blog - Thoughts on Technology & Development</title>
+        <meta
+            name="description"
+            content="Personal blog sharing insights on web development, technology trends, and coding best practices"
+        />
+        <meta name="author" content="Brad" />
+        <link rel="stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link">Skip to main content</a>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="nav-container">
+                <a href="#" class="nav-logo" aria-label="Brad's Blog Home"
+                    >Brad</a
+                >
+                <ul class="nav-menu" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="#" class="nav-link" role="menuitem">Home</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="#" class="nav-link" role="menuitem">About</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="#" class="nav-link" role="menuitem">Blog</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="#" class="nav-link" role="menuitem">Contact</a>
+                    </li>
+                </ul>
+                <button
+                    class="hamburger"
+                    aria-label="Toggle navigation menu"
+                    aria-expanded="false"
+                >
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <main class="main-content">
-        <section class="hero">
-            <div class="hero-content">
-                <h1 class="hero-title">Welcome to My Blog</h1>
-                <p class="hero-subtitle">Sharing thoughts, ideas, and experiences</p>
-            </div>
-        </section>
-
-        <section class="blog-posts">
-            <div class="container">
-                <h2 class="section-title">Latest Posts</h2>
-                <div class="posts-grid">
-                    <article class="post-card">
-                        <div class="post-image">
-                            <div class="placeholder-image"></div>
-                        </div>
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <span class="post-date">March 15, 2024</span>
-                                <span class="post-category">Technology</span>
-                            </div>
-                            <h3 class="post-title">Building Modern Web Applications</h3>
-                            <p class="post-excerpt">Exploring the latest trends and best practices in web development...</p>
-                            <a href="#" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="post-card">
-                        <div class="post-image">
-                            <div class="placeholder-image"></div>
-                        </div>
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <span class="post-date">March 10, 2024</span>
-                                <span class="post-category">Design</span>
-                            </div>
-                            <h3 class="post-title">The Art of Minimalist Design</h3>
-                            <p class="post-excerpt">How simplicity can create powerful user experiences...</p>
-                            <a href="#" class="read-more">Read More</a>
-                        </div>
-                    </article>
-
-                    <article class="post-card">
-                        <div class="post-image">
-                            <div class="placeholder-image"></div>
-                        </div>
-                        <div class="post-content">
-                            <div class="post-meta">
-                                <span class="post-date">March 5, 2024</span>
-                                <span class="post-category">Personal</span>
-                            </div>
-                            <h3 class="post-title">My Journey as a Developer</h3>
-                            <p class="post-excerpt">Reflecting on lessons learned and growth along the way...</p>
-                            <a href="#" class="read-more">Read More</a>
-                        </div>
-                    </article>
+        <main class="main-content" id="main-content">
+            <section class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Welcome to Brad's Blog</h1>
+                    <p class="hero-subtitle">
+                        Sharing insights on web development, technology, and
+                        coding
+                    </p>
                 </div>
+            </section>
+
+            <section class="blog-posts" aria-label="Blog posts">
+                <div class="container">
+                    <h2 class="section-title">Latest Posts</h2>
+                    <div class="posts-grid">
+                        <article class="post-card">
+                            <div class="post-image">
+                                <div
+                                    class="placeholder-image"
+                                    role="img"
+                                    aria-label="Placeholder image for web development blog post"
+                                ></div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"
+                                        >March 15, 2024</span
+                                    >
+                                    <span class="post-category"
+                                        >Technology</span
+                                    >
+                                </div>
+                                <h3 class="post-title">
+                                    Building Modern Web Applications
+                                </h3>
+                                <p class="post-excerpt">
+                                    Exploring the latest trends and best
+                                    practices in web development...
+                                </p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-image">
+                                <div
+                                    class="placeholder-image"
+                                    role="img"
+                                    aria-label="Placeholder image for design blog post"
+                                ></div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date"
+                                        >March 10, 2024</span
+                                    >
+                                    <span class="post-category">Design</span>
+                                </div>
+                                <h3 class="post-title">
+                                    The Art of Minimalist Design
+                                </h3>
+                                <p class="post-excerpt">
+                                    How simplicity can create powerful user
+                                    experiences...
+                                </p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </article>
+
+                        <article class="post-card">
+                            <div class="post-image">
+                                <div
+                                    class="placeholder-image"
+                                    role="img"
+                                    aria-label="Placeholder image for personal development blog post"
+                                ></div>
+                            </div>
+                            <div class="post-content">
+                                <div class="post-meta">
+                                    <span class="post-date">March 5, 2024</span>
+                                    <span class="post-category">Personal</span>
+                                </div>
+                                <h3 class="post-title">
+                                    My Journey as a Developer
+                                </h3>
+                                <p class="post-excerpt">
+                                    Reflecting on lessons learned and growth
+                                    along the way...
+                                </p>
+                                <a href="#" class="read-more">Read More</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" role="contentinfo">
+            <div class="container">
+                <p>&copy; 2024 Brad. All rights reserved.</p>
             </div>
-        </section>
-    </main>
+        </footer>
 
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Your Name. All rights reserved.</p>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
+        <script src="script.js"></script>
+    </body>
 </html>

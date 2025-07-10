@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pre-Flight Checklists and Code Reviews - Potable Anarchy Blog</title>
+    <title>Pre-flight Checklists and Code Reviews - Potable Anarchy Blog</title>
     <link rel="stylesheet" href="../style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
@@ -27,42 +27,56 @@
                     <span class="post-date">May 22, 2025</span>
                     <span class="post-category">Leadership</span>
                 </div>
-                <h1 class="post-title">Pre-Flight Checklists and Code Reviews</h1>
+                <h1 class="post-title">Pre-flight Checklists and Code Reviews</h1>
             </header>
 
             <div class="post-content">
-                <p>Leadership in technology isn't just about technical skills—it's about enabling teams to do their best work. Here's my experience with pre-flight checklists and code reviews.</p>
+                <p>Yesterday, I sat in the cockpit of a Cessna 172 running through my pre-flight checklist while my instructor watched patiently. Later that evening, I was reviewing pull requests for a critical production deployment. The ritual felt remarkably similar: methodical verification of systems before trusting them with something valuable.</p>
 
-<p>What aviation training taught me about systematic thinking and team safety protocols...</p>
+                <h2>The Discipline of Systematic Verification</h2>
+                <p>Every pilot learns that pre-flight checklists aren't suggestions—they're survival tools. You check fuel quantity, oil level, control surface movement, and a dozen other items in the same order every time. It doesn't matter if you've flown this exact aircraft a hundred times before. Complacency kills.</p>
 
-<h2>The Challenge</h2>
-<p>Every challenge starts with understanding the problem space. In this case, I found myself dealing with complex interactions between systems that weren't immediately obvious. The surface-level symptoms were just the beginning of a deeper architectural challenge.</p>
+                <p>Code reviews serve the same function in software development. Even experienced developers miss things. Fresh eyes catch bugs that the author's brain has trained itself to overlook. The systematic approach of reviewing logic, testing edge cases, and checking for security issues prevents disasters that could affect thousands of users.</p>
 
-<h2>Building Trust</h2>
-<p>The solution required both technical precision and strategic thinking. I learned that the most elegant solutions often come from stepping back and looking at the bigger picture. Sometimes the best fix is the one that prevents the problem from occurring in the first place.</p>
+                <h2>Standardization vs. Flexibility</h2>
+                <p>Aviation checklists are standardized for good reason. When you're under stress—engine failure, bad weather, emergency landing—you need procedures so ingrained they become automatic. But checklists also adapt to different aircraft types and flight conditions.</p>
 
-<h2>Communication Strategies</h2>
-<p>Through this experience, I discovered several key insights:</p>
-<ul>
-    <li><strong>Simplicity wins</strong> - Complex solutions often introduce more problems than they solve</li>
-    <li><strong>Monitoring is crucial</strong> - You can't fix what you can't see</li>
-    <li><strong>Documentation matters</strong> - Future you will thank present you</li>
-    <li><strong>Team communication</strong> - The best solutions come from collaborative thinking</li>
-</ul>
+                <p>Our code review process follows similar principles. We have standard checks: Does the code solve the stated problem? Are tests comprehensive? Is documentation updated? But we adapt the depth and focus based on the change complexity, the reviewer's expertise, and the risk profile of the modified system.</p>
 
-<h2>Team Dynamics</h2>
-<p>Based on this experience, I've developed a set of practices that have served me well in similar situations:</p>
-<ul>
-    <li>Start with the user experience and work backwards</li>
-    <li>Measure twice, cut once - thorough planning prevents painful rollbacks</li>
-    <li>Build in observability from the beginning</li>
-    <li>Always have a rollback plan</li>
-</ul>
+                <h2>The Psychology of Shared Responsibility</h2>
+                <p>In aviation, the pilot-in-command has ultimate responsibility, but good pilots actively seek input from co-pilots, air traffic control, and even passengers when appropriate. Multiple perspectives improve decision-making and catch errors that solo thinking might miss.</p>
 
-<h2>Measuring Success</h2>
-<p>Looking ahead, I'm excited about how these lessons will apply to future challenges. The technology landscape is constantly evolving, but the fundamental principles of good system design remain constant.</p>
+                <p>Code reviews create the same shared responsibility model. The author owns the change, but reviewers share accountability for what goes into production. This shared ownership leads to better code and builds team knowledge, but it also requires trust and clear communication about expectations.</p>
 
-<p>Great leadership in tech is about creating environments where people can grow, learn, and build amazing things together.</p>
+                <h2>Learning Through Teaching</h2>
+                <p>When my flight instructor reviews my pre-flight inspection, she's not just checking my work—she's teaching me to see what experienced pilots notice automatically. Where do stress cracks typically appear? How do you distinguish normal wear from concerning damage? What should engine oil look like when it's time for a change?</p>
+
+                <p>The best code reviews work the same way. Senior developers don't just approve or reject changes—they explain their reasoning. Why is this pattern problematic? How could this code behave under high load? What security implications does this change introduce? Review comments become teaching moments that elevate the entire team's capabilities.</p>
+
+                <h2>The Cost of Shortcuts</h2>
+                <p>There's always pressure to skip steps when you're running behind schedule. Skip the detailed aircraft inspection when you're late for departure. Merge code without thorough review when the release deadline is looming. Both scenarios create the same false economy: saving minutes by risking major consequences.</p>
+
+                <p>I've learned that the most dangerous mindset in both contexts is "just this once." The shortcuts that feel justified under pressure are exactly when systematic processes matter most. When stakes are high and time is short, that's when checklists and reviews prevent expensive mistakes.</p>
+
+                <h2>Evolving Standards</h2>
+                <p>Aviation checklists evolve based on incidents and technological improvements. New items get added when investigations reveal failure modes that weren't previously considered. Obsolete checks get removed when equipment changes make them irrelevant.</p>
+
+                <p>Our code review practices have evolved similarly. We added security-focused checks after learning from production vulnerabilities. We introduced performance review criteria after scaling challenges. We streamlined documentation requirements based on what actually helped future maintainers versus what just satisfied process requirements.</p>
+
+                <h2>Building Trust Through Transparency</h2>
+                <p>When pilots complete pre-flight inspections, they often invite passengers to observe and ask questions. Transparency builds confidence. Passengers understand that the extra time spent checking systems is protecting their safety, not delaying their trip.</p>
+
+                <p>Code reviews work best when the process is transparent and educational rather than gatekeeping and judgmental. Authors learn faster when they understand not just what needs to change, but why. Reviewers provide better feedback when they understand the problem context and constraints.</p>
+
+                <h2>The Human Factor</h2>
+                <p>Both pre-flight inspections and code reviews ultimately depend on human judgment. Checklists and processes provide structure, but experienced professionals must interpret what they find and make decisions about risk and safety.</p>
+
+                <p>The most effective pilots and developers I know treat these processes not as bureaucratic overhead, but as craft skills that improve with practice. They understand that systematic verification isn't about lack of trust—it's about acknowledging that complex systems require disciplined attention to prevent avoidable failures.</p>
+
+                <h2>Clear Skies, Clean Code</h2>
+                <p>Whether you're preparing an aircraft for flight or preparing code for production, the fundamental challenge is the same: systematically verifying that complex systems will behave safely under real-world conditions. Both require discipline, expertise, and the humility to acknowledge that even experienced professionals benefit from structured oversight.</p>
+
+                <p>The next time someone questions why code reviews take so long, I'll think of my flight instructor's patient explanation as we worked through the pre-flight checklist: "This airplane has flown thousands of hours safely. But that's because every flight starts with the same careful attention to detail. That's not overhead—that's what makes everything else possible."</p>
             </div>
 
             <footer class="post-footer">

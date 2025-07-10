@@ -31,38 +31,54 @@
             </header>
 
             <div class="post-content">
-                <p>DevOps is where the rubber meets the road in software development. It's about bridging the gap between development and operations. Here's what I've learned about spring cleaning: system maintenance and renewal.</p>
+                <p>This weekend, I tackled two overdue projects: cleaning out our garage and performing quarterly maintenance on our production infrastructure. By Sunday evening, I realized these seemingly different tasks follow remarkably similar patterns and require surprisingly similar mindsets.</p>
 
-<p>How annual home maintenance projects mirror systematic infrastructure updates and dependency refreshes...</p>
+                <h2>Taking Inventory</h2>
+                <p>Both projects started with the same uncomfortable truth-telling exercise. In the garage, I found Christmas decorations from 2019 still in their shopping bags, three broken lawn mowers that I kept "meaning to fix," and enough duplicate tools to stock a small hardware store.</p>
 
-<h2>The Problem Space</h2>
-<p>Every challenge starts with understanding the problem space. In this case, I found myself dealing with complex interactions between systems that weren't immediately obvious. The surface-level symptoms were just the beginning of a deeper architectural challenge.</p>
+                <p>Our production systems had their own equivalent clutter: services that were deployed for a temporary feature three releases ago, monitoring alerts that nobody responded to anymore, and database indices that were created for queries we no longer run. Like the garage, every accumulation had a logical reason for existing at the time.</p>
 
-<h2>Tooling and Process</h2>
-<p>The solution required both technical precision and strategic thinking. I learned that the most elegant solutions often come from stepping back and looking at the bigger picture. Sometimes the best fix is the one that prevents the problem from occurring in the first place.</p>
+                <h2>The Psychology of Technical Debt</h2>
+                <p>The hardest part of both cleanups was letting go of things that might be useful someday. That broken circular saw could be repaired with the right parts. That legacy API endpoint might be needed by some unknown integration.</p>
 
-<h2>Automation Strategy</h2>
-<p>Through this experience, I discovered several key insights:</p>
-<ul>
-    <li><strong>Simplicity wins</strong> - Complex solutions often introduce more problems than they solve</li>
-    <li><strong>Monitoring is crucial</strong> - You can't fix what you can't see</li>
-    <li><strong>Documentation matters</strong> - Future you will thank present you</li>
-    <li><strong>Team communication</strong> - The best solutions come from collaborative thinking</li>
-</ul>
+                <p>But I've learned that both physical and technical debt compound over time. The broken tools take up space and mental energy. The unused services consume resources and create confusion for new team members. The cost of keeping them eventually exceeds any theoretical future value.</p>
 
-<h2>Cultural Changes</h2>
-<p>Based on this experience, I've developed a set of practices that have served me well in similar situations:</p>
-<ul>
-    <li>Start with the user experience and work backwards</li>
-    <li>Measure twice, cut once - thorough planning prevents painful rollbacks</li>
-    <li>Build in observability from the beginning</li>
-    <li>Always have a rollback plan</li>
-</ul>
+                <h2>The Marie Kondo Method for Infrastructure</h2>
+                <p>Marie Kondo's tidying philosophy translates surprisingly well to system maintenance. Does this service spark joy? More practically: Does it serve a clear, current purpose? Is it actively maintained? Would we build it again today knowing what we know now?</p>
 
-<h2>Measuring Impact</h2>
-<p>Looking ahead, I'm excited about how these lessons will apply to future challenges. The technology landscape is constantly evolving, but the fundamental principles of good system design remain constant.</p>
+                <p>I created three categories for both projects: Keep and improve, Keep but migrate/refactor, and Remove completely. The middle category was the most interesting—things that served a purpose but needed renovation to continue being useful.</p>
 
-<p>The best DevOps practices are those that make the hard things easy and the risky things safe.</p>
+                <h2>Documentation as Organization</h2>
+                <p>A clean garage needs a system for finding things later. I labeled storage bins, created an inventory spreadsheet, and established zones for different types of equipment. Similarly, our infrastructure cleanup included updating documentation, improving naming conventions, and creating service catalogs.</p>
+
+                <p>Both efforts were investments in future productivity. The hour spent labeling storage containers saves ten minutes every time I need to find something. The afternoon spent documenting our monitoring setup saves hours during the next incident response.</p>
+
+                <h2>Establishing Maintenance Rhythms</h2>
+                <p>The biggest revelation was recognizing that both spaces had deteriorated because we lacked regular maintenance schedules. The garage became cluttered because we never set aside time for periodic organization. Our systems accumulated debt because we always prioritized new features over maintenance.</p>
+
+                <p>I've now blocked quarterly "spring cleaning" sessions for both—scheduled garage organization and infrastructure hygiene reviews. Small, regular maintenance prevents the overwhelming buildup that requires weekend-long cleanup marathons.</p>
+
+                <h2>The Compound Benefits</h2>
+                <p>Two weeks later, the benefits of both cleanup efforts continue to compound. I can find tools quickly, which makes home projects more enjoyable. Our systems are more reliable, which makes on-call rotations less stressful.</p>
+
+                <p>But perhaps the biggest benefit is psychological. Working in a clean, organized environment—whether it's a tidy garage or a well-maintained codebase—reduces cognitive load and increases satisfaction with the work itself.</p>
+
+                <h2>Lessons for System Design</h2>
+                <p>This experience reinforced several principles I now apply to both system design and space organization:</p>
+
+                <ul>
+                    <li><strong>Design for maintenance from the beginning</strong> - Easy cleanup prevents major overhauls</li>
+                    <li><strong>Regular small efforts beat sporadic large ones</strong> - Quarterly reviews prevent annual emergencies</li>
+                    <li><strong>Clear ownership and documentation</strong> - Everything should have a purpose and a place</li>
+                    <li><strong>The cost of keeping things</strong> - Sometimes removal is the best improvement</li>
+                </ul>
+
+                <h2>Looking Forward</h2>
+                <p>As spring progresses into summer, both my garage and our production systems are humming along more smoothly. Tools are where they should be. Services do what they're supposed to do. Alerts fire when they should and stay quiet when they shouldn't.</p>
+
+                <p>The seasonal metaphor isn't accidental. Just as gardens need regular tending to stay healthy, systems need periodic renewal to remain effective. The work is never completely finished, but the ongoing maintenance becomes part of the natural rhythm rather than a crisis intervention.</p>
+
+                <p>Whether you're organizing storage spaces or managing infrastructure, the fundamental challenge is the same: creating and maintaining systems that support productive work rather than hindering it. Sometimes the best way forward is to first clear away what's no longer serving you.</p>
             </div>
 
             <footer class="post-footer">

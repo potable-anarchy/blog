@@ -43,6 +43,10 @@ jobs:
       run: |
         python generate_blog_content.py
     
+    - name: Rebuild index with sorted posts
+      run: |
+        python build_index.py
+    
     - name: Check for changes
       id: verify-changed-files
       run: |
@@ -59,6 +63,7 @@ jobs:
         git config --local user.name "GitHub Action"
         git add posts/*.html
         git add generated_content.json
+        git add index.html
         git commit -m "Generate authentic blog content via GitHub Actions
 
         🤖 Generated with Claude Code + OpenAI GPT-4o

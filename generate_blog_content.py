@@ -21,7 +21,8 @@ class BlogContentGenerator:
             self.client = OpenAI(api_key=api_key)
         else:
             self.client = None
-        self.posts_dir = Path('/Users/brad/code/blog/posts')
+        # Use relative paths that work both locally and in GitHub Actions
+        self.posts_dir = Path('./posts')
         self.generated_content = {}
         
     def extract_post_metadata(self, html_file: Path) -> Dict:

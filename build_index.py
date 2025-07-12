@@ -11,8 +11,9 @@ from typing import List, Dict, Tuple
 
 class BlogIndexBuilder:
     def __init__(self):
-        self.posts_dir = Path('/Users/brad/code/blog/posts')
-        self.index_file = Path('/Users/brad/code/blog/index.html')
+        # Use relative paths that work both locally and in GitHub Actions
+        self.posts_dir = Path('./posts')
+        self.index_file = Path('./index.html')
         self.posts = []
         
     def extract_post_info(self, html_file: Path) -> Dict:
